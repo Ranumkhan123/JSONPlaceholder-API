@@ -33,7 +33,7 @@ This test suite is designed to automate key API operations on the [JSONPlacehold
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 | Tool        | Purpose                      |
 |-------------|------------------------------|

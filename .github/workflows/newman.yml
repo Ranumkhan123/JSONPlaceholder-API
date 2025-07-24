@@ -31,4 +31,10 @@ jobs:
             --reporter-htmlextra-export "reports/htmlreport.html"
 
       - name: Upload HTML Report
-        uses: ac
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-report
+          path: reports/htmlreport.html
+
+      - name: Debug Files
+        run: ls -R

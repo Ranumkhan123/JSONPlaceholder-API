@@ -25,8 +25,8 @@ jobs:
 
     - name: Run Postman Collection
       run: |
-       newman run "API Collection/jsonplaceholder.postman_collection.json" \ 
-          --environment "Postman Environment/ jsonplaceholder_env.json" \
+        newman run "API Collection and Env/jsonplaceholder.postman_collection.json" \
+          --environment "API Collection and Env/jsonplaceholder_env.json" \
           --reporters cli,htmlextra \
           --reporter-htmlextra-export "newman/htmlreport.html"
 
@@ -34,3 +34,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: html-report
+        path: newman/htmlreport.html

@@ -25,7 +25,8 @@ jobs:
 
     - name: Run Postman Collection
       run: |
-        newman run "jsonplaceholder.postman_collection.json" \
+       newman run "API Collection/jsonplaceholder.postman_collection.json" \ 
+          --environment "Postman Environment/ jsonplaceholder_env.json" \
           --reporters cli,htmlextra \
           --reporter-htmlextra-export "newman/htmlreport.html"
 
